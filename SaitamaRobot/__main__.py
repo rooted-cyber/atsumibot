@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot. You can find my list of available commands with /help.
+I am an Anime themed group management bot. You can find my list of available commands with /help....... Owner of bot = [Rashh](https://t.me/rash_sudo).
 """
 
 HELP_STRINGS = """
@@ -74,9 +74,9 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/3991b1088807a2268853b.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/dce3ad081c7d533fb4d17.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
+DONATE_STRING = """Heya, glad to hear you want to donate! BTW.. this is a forked repo of saitama... So, you should donate to saitama rather than me...
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Mai Sakurajima to your group",
+                            text="☑️ Add Atsumi-chan to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -207,12 +207,15 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔗 Source 🔗",
-                             url="https://github.com/Raki-12/Mai-Sakurajima")
+                             url="https://github.com/rash-c9/atsumibot")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🥰 Wanna know who I am? 🥰",
-                             url="https://t.me/bunny_girl_senpai_sub")
+                             text="🥰 For fun chat 🥰",
+                             url="https://t.me/JusttChatting"),
+                         InlineKeyboardButton(
+                             text="🔗 Mother Source 🔗",
+                             url="https://github.com/Raki-12/Mai-Sakurajima")
                     ]]))
                   
                     
