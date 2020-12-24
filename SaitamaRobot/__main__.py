@@ -57,7 +57,7 @@ I am an Anime themed group management bot. You can find my list of available com
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I help admins manage their groups with Bunny Girl Charm! 
+I help admins manage their groups!!!!!!! XOXO! 
 
 *Main* commands available:
  • /help: PM's you this message.
