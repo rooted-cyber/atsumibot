@@ -57,8 +57,9 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                '{} is here!', 'Welcome back you sucker {}','Everyone ready with guns? {} terrorist is here',
-                'AA GYA NALLE WAPAS.... {}', '{} shitss...chutiya aa gya...'
+                'Welcome back you sucker {}','Everyone ready with guns? {} terrorist is here',
+                'AA GYA NALLE WAPAS.... {}', '{} shitss...chutiya aa gya...', 'bsdk {}... why are you back😑',
+                'the bawasir is back!!! {}'
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
