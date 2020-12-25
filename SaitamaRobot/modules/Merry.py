@@ -9,3 +9,9 @@ async def cat(event):
     await edit_or_reply(
         event, MERRY CHRISTMAS TO YOU TOO DEAR!!!
 )
+import random
+
+from SaitamaRobot import dispatcher
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from telegram import Update
+from telegram.ext import CallbackContext, run_async
