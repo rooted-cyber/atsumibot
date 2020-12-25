@@ -1,7 +1,11 @@
+import asyncio
+import random
 
-@bot.on(admin_cmd(outgoing=True, pattern="gaali$"))
-@bot.on(sudo_cmd(pattern="gaali$", allow_sudo=True))
+from . import catmemes
+
+@bot.on(outgoing=True, pattern="merry$")
+@bot.on(pattern="merry$", allow_sudo=True)
 async def cat(event):
     await edit_or_reply(
-        event,
+        event, MERRY CHRISTMAS TO YOU TOO DEAR!!!
 )
