@@ -29,14 +29,14 @@ def afk(update: Update, context: CallbackContext):
         reason = args[1]
         if len(reason) > 100:
             reason = reason[:100]
-            notice = "\n**Your afk reason was shortened to 100 characters.Why tf u want soo big AFK???**"
+            notice = "\n *Your afk reason was shortened to 100 characters.Why tf u want soo big AFK???* "
     else:
         reason = ""
 
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("{} is now **away from this chaos**!{}".format(
+        update.effective_message.reply_text("{} is now *away from this chaos*!{}".format(
             fname, notice))
     except BadRequest:
         pass
@@ -57,7 +57,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-               'Welcome back {}', 'Guards!!! guns out {} is here', '{} is no longer afk', '{}... why tf were you afk?', '{}I missed u when u were afk'
+               'Welcome back {}', 'Guards!!! guns out {} is here', '{} is no longer afk', '{}... why tf were you afk?', '{} I missed u when u were afk'
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
