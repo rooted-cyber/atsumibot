@@ -74,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/ac94ced0f931678788396.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/dba3bf16c4c58467500eb.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate! BTW.. this is a forked repo of saitama... So, you should donate to saitama rather than me...
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -211,10 +211,10 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🥰 For fun chat 🥰",
+                             text="🥰For fun chat 🥰",
                              url="https://t.me/JusttChatting"),
                          InlineKeyboardButton(
-                             text="🔗 Mother Source 🔗",
+                             text="🔗 Base Source 🔗",
                              url="https://github.com/AnimeKaizoku/SaitamaRobot")
                     ]]))
                   
